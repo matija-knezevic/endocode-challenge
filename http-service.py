@@ -44,6 +44,7 @@ def get_git_stuff():
 
 # Logging
 logging.basicConfig(
+        filename="http-service.log",
         format="%(asctime)s %(levelname)-8s %(message)s",
         level=logging.INFO,
         datefmt="%Y-%m-%d %H:%M:%S")
