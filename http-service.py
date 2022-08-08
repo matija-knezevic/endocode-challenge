@@ -1,11 +1,17 @@
 from crypt import methods
 from flask import Flask
 from flask import request
+from git import Repo
+from urllib.request import urlopen
 import re
+import json
+import urllib
+
 
 app = Flask(__name__)
 
-# First endpoint
+
+# helloworld endpoint
 @app.route("/helloworld")   
 
 def hello_world():
@@ -17,3 +23,24 @@ def hello_world():
     else:    
         cut_case = re.sub(r'(?<!^)(?=[A-Z])', ' ', name)
         return str(cut_case)
+
+# versionz endpoint
+@app.route("/versionz")
+
+def get_git_stuff():
+    
+    url = "https://api.github.com/repos/matija-knezevic/endocode-challenge/commits"
+    
+    request = urllib.request.Request(
+        url,
+        data=None,
+        headers={
+            'User-Agent': 'endocode-challenge by github.com/matija-knezevic/endocode-challenge'
+        }
+    )
+    response = urllib.request.urlopen(request)
+    return json.loads(response.read().decode('utf-8')) 
+
+
+
+
