@@ -1,6 +1,6 @@
 # endocode-challenge
 
-endocode-challenge is "homework" assingment from a cool company called Endocode GmbH.
+endocode-challenge is "homework" assignment from a cool company called Endocode GmbH.
 
 ## Installation
 
