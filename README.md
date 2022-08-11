@@ -21,7 +21,7 @@ flask --app http-service.py run -h <your_ip> -p <your_port>
 
 ## Usage
 
-```python
+```bash
 # Returns "Hello World"
 curl http://localhost:8080/helloworld
 
@@ -30,6 +30,42 @@ curl http://localhost:8080/helloworld?name=JoeyRamoneRules
 
 # Returns git hash of all commits in the repository
 curl http://localhost:8080/versionz
+```
+
+### Testing
+
+```bash
+# Starts unit testing
+python test_http-service.py
+```
+
+```bash
+# Example for passed tests
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.312s
+
+OK
+
+```
+
+```bash
+# Example for failed tests
+...
+F..
+======================================================================
+FAIL: test_helloworld (__main__.TestRESTRequests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_http-service.py", line 29, in test_helloworld
+    self.assertEqual(404,RESTRequests.rest_requests("http://localhost:8080/helloworld"))
+AssertionError: 404 != 200
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.120s
+
+FAILED (failures=1)
+
 ```
 
 ## License
