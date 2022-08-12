@@ -26,4 +26,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: matija-knezevic/http-service:latest
+          tags: matijaknezevic/http-service:latest
