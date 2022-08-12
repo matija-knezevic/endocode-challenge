@@ -1,7 +1,8 @@
 name: Deployment
 
 on: [push]
-
+  paths-ignore:
+    - "test_http-service.py"
 jobs:
   build:
 
