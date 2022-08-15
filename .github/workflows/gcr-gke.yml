@@ -66,7 +66,8 @@ jobs:
           kustomize-version: 4.5.4
       
       - name: Debug
-        run: ls -l
+        run: |
+          ls -l
 
       - name: Update deploy image
         working-directory: ${{ github.workspace }}/deploy
