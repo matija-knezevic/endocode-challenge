@@ -64,11 +64,10 @@ jobs:
         uses: imranismail/setup-kustomize@v1
         with:
           kustomize-version: 4.5.4
-      
-      - name: Debug
-        run: |-
-          ls -l
 
+      - name: Get directory
+        run: pwd   
+      
       - name: Update deploy image
         working-directory: ${{ github.workspace }}/deploy
         run: |-
