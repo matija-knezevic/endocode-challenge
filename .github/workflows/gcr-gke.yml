@@ -68,8 +68,8 @@ jobs:
       - name: Update deploy image
         working-directory: ${{ github.workspace }}/deploy
         run: |-
-          kustomize edit set image "gcr.io/$PROJECT_ID/${IMAGE}:${{ steps.vars.outputs.docker_tag }}"
+          ./kustomize edit set image "gcr.io/$PROJECT_ID/${IMAGE}:${{ steps.vars.outputs.docker_tag }}"
           cat kustomization.yaml
-          kustomize build . | kubectl apply -f -
+          ./kustomize build . | kubectl apply -f -
           kubectl rollout status deployment/${DEPLOYMENT_NAME}
           kubectl get services -o wide
