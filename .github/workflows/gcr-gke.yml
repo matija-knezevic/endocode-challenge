@@ -1,6 +1,6 @@
 # NOTE: Originally I was going to take the image from DockerHub and deploy it to GKE, but apparently this is not possible anymore: https://cloud.google.com/run/docs/deploying#other-registries
 
-name: Docker image -> GCR -> GKE
+name: Build -> Docker image -> GCR -> GKE
 
 on:
   workflow_dispatch:
