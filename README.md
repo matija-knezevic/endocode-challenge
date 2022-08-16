@@ -16,7 +16,7 @@ In this case "make" runs a Flask server which is accessible on localhost, port 8
 If you want to override this you can either edit Makefile or use the following command:
 
 ```bash
-flask --app http-service.py run -h <your_ip> -p <your_port>
+flask --app endo-app.py run -h <your_ip> -p <your_port>
 ```
 
 ## Usage
@@ -36,7 +36,7 @@ curl http://localhost:8080/versionz
 
 ```bash
 # Starts unit testing
-python test_http-service.py
+python test_endo-app.py
 ```
 
 ```bash
@@ -57,7 +57,7 @@ F..
 FAIL: test_helloworld (__main__.TestRESTRequests)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "test_http-service.py", line 29, in test_helloworld
+  File "test_endo-app.py", line 29, in test_helloworld
     self.assertEqual(404,RESTRequests.rest_requests("http://localhost:8080/helloworld"))
 AssertionError: 404 != 200
 
