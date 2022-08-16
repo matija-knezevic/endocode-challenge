@@ -4,7 +4,7 @@ metadata:
   name: endo-app
 spec:
   replicas: 1
-  progressDeadlineExceeded: 60000
+  progressDeadlineSeconds: 60000
   selector:
     matchLabels:
       app: endo-app
