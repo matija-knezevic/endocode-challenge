@@ -4,6 +4,7 @@ metadata:
   name: endo-app
 spec:
   replicas: 1
+  progressDeadlineExceeded: 60000
   selector:
     matchLabels:
       app: endo-app
@@ -27,7 +28,6 @@ spec:
             cpu: 100m
           limits:
             cpu: 100m
-  ProgressDeadlineExceeded: 60000
 ---
 apiVersion: v1
 kind: Service
