@@ -18,8 +18,8 @@ spec:
         app: endo-app
     spec:
       containers:
-      - name: hello-app
-        image: gcr.io/google-samples/hello-app:1.0
+      - name: endo-app
+        image: endo-app:latest
         ports:
         - containerPort: 8080
         resources:
