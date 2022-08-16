@@ -2,9 +2,9 @@
 
 FROM python:3.8
 
-ENV FLASK_APP=http-service.py
+ENV FLASK_APP=endo-app.py
 
-WORKDIR /http-service-docker
+WORKDIR /endo-app-docker
 
 COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
