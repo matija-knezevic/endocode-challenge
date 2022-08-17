@@ -10,4 +10,4 @@ spec:
     image: endo-app
     ports:
     - containerPort: 80
-  termminationGracePeriosSeconds: 60
+  termminationGracePeriosSeconds: 30
