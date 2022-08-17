@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: endo-app
+  labels:
+    name: endo-app
+spec:
+  containers:
+  - name: endo-app
+    image: endo-app
+    ports:
+    - containerPort: 80
+  termminationGracePeriosSeconds: 60
