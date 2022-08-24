@@ -1,7 +1,3 @@
-# endocode-challenge
-
-endocode-challenge is "homework" assignment from a cool company called Endocode AG.
-
 ## Installation
 
 Checkout the repository: https://github.com/matija-knezevic/endocode-challenge
