@@ -1,6 +1,6 @@
 ## Installation
 
-Checkout the repository: https://github.com/matija-knezevic/endocode-challenge
+Checkout the repository: https://github.com/matija-knezevic/python-app-dockerhub-gke-deployment
 
 Go to root directory and execute:
 
