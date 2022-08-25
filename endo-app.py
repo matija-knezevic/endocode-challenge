@@ -30,13 +30,13 @@ def hello_world():
 
 def get_git_stuff():
     
-    url = "https://api.github.com/repos/matija-knezevic/endocode-challenge/commits"
+    url = "https://api.github.com/repos/matija-knezevic/python-app-dockerhub-gke-deployment"
     
     request = urllib.request.Request(
         url,
         data=None,
         headers={
-            "User-Agent": "endocode-challenge by github.com/matija-knezevic/endocode-challenge"
+            "User-Agent": "endocode-challenge by github.com/matija-knezevic/python-app-dockerhub-gke-deployment"
         }
     )
     response = urllib.request.urlopen(request)
