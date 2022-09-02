@@ -26,7 +26,7 @@ curl http://localhost:8080/helloworld?name=JoeyRamoneRules
 
 OR
 
-curl http://localhost:8080/helloworld?name=DonauDampfSchifFahrtsElektrizitätenHauptBetriebsWerkbauUnterBeamtenGesellschaft
+curl http://localhost:8080/helloworld?name=DonauDampfSchifFahrtsElektrizitaetenHauptBetriebsWerkbauUnterBeamtenGesellschaft
 
 # Returns git hash of all commits in the repository
 curl http://localhost:8080/versionz
