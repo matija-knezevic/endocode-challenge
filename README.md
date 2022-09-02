@@ -24,6 +24,10 @@ curl http://localhost:8080/helloworld
 # Returns "Joey Ramone Rules" but (of course) you can use your own CamelCase string
 curl http://localhost:8080/helloworld?name=JoeyRamoneRules
 
+OR
+
+curl http://localhost:8080/helloworld?name=DonauDampfSchifFahrtsElektrizitätenHauptBetriebsWerkbauUnterBeamtenGesellschaft
+
 # Returns git hash of all commits in the repository
 curl http://localhost:8080/versionz
 ```
